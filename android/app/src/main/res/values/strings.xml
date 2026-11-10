@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Gujarati Ghazal Checker</string>
+    <string name="title_activity_main">Gujarati Ghazal Checker</string>
+    <string name="package_name">com.chhand.checker</string>
+    <string name="custom_url_scheme">com.chhand.checker</string>
+</resources>

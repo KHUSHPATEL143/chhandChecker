@@ -1,0 +1,18 @@
+﻿{
+  "name": "ગુજરાતી ગઝલ છંદ ચેકર",
+  "short_name": "ગઝલ છંદ",
+  "description": "ઉદય શાહના ૩૦ છંદો અને પિંગળશાસ્ત્ર આધારિત ગુજરાતી ગઝલ મીટર, માત્રા અને AI છંદભંગ સુધારક",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#f8fafc",
+  "theme_color": "#0369a1",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+﻿@import "tailwindcss";
+
+:root {
+  --sat: env(safe-area-inset-top, 0px);
+  --sab: env(safe-area-inset-bottom, 0px);
+  --sal: env(safe-area-inset-left, 0px);
+  --sar: env(safe-area-inset-right, 0px);
+}
+
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+  }
+
+  body {
+    font-family: 'Anek Gujarati', 'Outfit', sans-serif;
+    color: #1e293b;
+    background-color: #f8fafc;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-left: env(safe-area-inset-left, 0px);
+    padding-right: env(safe-area-inset-right, 0px);
+  }
+
+  /* Prevent auto zoom in iOS/Android inputs */
+  input, textarea, select {
+    font-size: 16px;
+  }
+}
+
+/* Safe Area View Helper Classes */
+.safe-top {
+  padding-top: max(0.75rem, env(safe-area-inset-top, 0px));
+}
+
+.safe-bottom {
+  padding-bottom: max(0.75rem, env(safe-area-inset-bottom, 0px));
+}
+
+.safe-left {
+  padding-left: max(0.75rem, env(safe-area-inset-left, 0px));
+}
+
+.safe-right {
+  padding-right: max(0.75rem, env(safe-area-inset-right, 0px));
+}
+
+.font-gujarati-serif {
+  font-family: 'Noto Serif Gujarati', serif;
+}
+
+.font-gujarati {
+  font-family: 'Anek Gujarati', sans-serif;
+}
+
+/* Hide scrollbar for clean swipeable mobile tabs */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

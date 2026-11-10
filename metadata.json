@@ -1,0 +1,6 @@
+{
+  "name": "ગુજરાતી ગઝલ છંદ ચેકર (Gujarati Ghazal Meter Checker)",
+  "description": "ઉદય શાહના ૩૦ છંદોના ડેટાબેઝ અને પિંગળશાસ્ત્રના નિયમો આધારિત ગુજરાતી ગઝલ મીટર, માત્રા અને છંદભંગ તપાસક.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
