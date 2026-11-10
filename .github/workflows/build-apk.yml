@@ -31,8 +31,12 @@ jobs:
       - name: Build Web Application
         run: npm run build
 
-      - name: Copy Web Assets to Android
-        run: npx cap copy android
+      - name: Inject Built Assets into Android Project
+        run: |
+          mkdir -p android/app/src/main/assets/public
+          cp -r dist/* android/app/src/main/assets/public/
+          cp capacitor.config.json android/app/src/main/assets/capacitor.config.json
+          npx --yes @capacitor/cli copy android || true
 
       - name: Make Gradlew Executable
         run: chmod +x android/gradlew
